@@ -1,0 +1,4 @@
+com\codewithsiddhesh\taskmanagerbackend\Entities\Task.class
+com\codewithsiddhesh\taskmanagerbackend\Repositories\TaskRepository.class
+com\codewithsiddhesh\taskmanagerbackend\Controller\TaskController.class
+com\codewithsiddhesh\taskmanagerbackend\TaskmanagerBackendApplication.class
