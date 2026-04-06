@@ -8,7 +8,7 @@ public class HealthController {
 
     @GetMapping("/")
     public String home() {
-        return "App is running 🚀";
+        return "OK";
     }
 
 }
