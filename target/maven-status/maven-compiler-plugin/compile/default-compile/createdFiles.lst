@@ -1,5 +1,5 @@
 com\codewithsiddhesh\taskmanagerbackend\TaskController.class
+com\codewithsiddhesh\taskmanagerbackend\TaskRepository.class
 com\codewithsiddhesh\taskmanagerbackend\Task.class
 com\codewithsiddhesh\taskmanagerbackend\TaskmanagerBackendApplication.class
-com\codewithsiddhesh\taskmanagerbackend\TaskRepository.class
 com\codewithsiddhesh\taskmanagerbackend\HealthController.class
