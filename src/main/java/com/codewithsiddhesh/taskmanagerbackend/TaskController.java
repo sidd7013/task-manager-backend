@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/tasks")
-@CrossOrigin(origins = { "https://roaring-salmiakki-8333d2.netlify.app"})
+@CrossOrigin(origins = "https://roaring-salmiakki-8333d2.netlify.app")
 public class TaskController {
 	
 	@Autowired
