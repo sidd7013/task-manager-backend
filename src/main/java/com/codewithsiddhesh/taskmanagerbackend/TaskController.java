@@ -10,11 +10,13 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @RequestMapping("/tasks")
+@CrossOrigin(
+		originPatterns = { "https://*.netlify.app", "http://localhost:5173", "http://localhost:3000" },
+		allowCredentials = "true")
 public class TaskController {
 	
 	@Autowired
