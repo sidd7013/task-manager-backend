@@ -1,5 +1,6 @@
 package com.codewithsiddhesh.taskmanagerbackend;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -13,10 +14,15 @@ import org.springframework.web.filter.CorsFilter;
 public class CorsConfig {
 
     @Value("${app.cors.allowed-origins}")
-    private List<String> allowedOrigins;
+    private String allowedOriginsProperty;
 
     @Bean
     public CorsFilter corsFilter() {
+        List<String> allowedOrigins = Arrays.stream(allowedOriginsProperty.split(","))
+                .map(String::trim)
+                .filter(origin -> !origin.isEmpty())
+                .toList();
+
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowedOrigins(allowedOrigins);
         config.setAllowCredentials(true);
