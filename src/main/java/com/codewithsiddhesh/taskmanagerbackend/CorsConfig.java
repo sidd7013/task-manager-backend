@@ -14,8 +14,8 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://roaring-salmiakki-8333d2.netlify.app")
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowedOrigins("http://localhost:5173","https://roaring-salmiakki-8333d2.netlify.app")
+                        .allowedMethods("*")
                         .allowedHeaders("*");
             }
         };

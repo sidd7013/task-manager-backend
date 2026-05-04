@@ -8,12 +8,12 @@ public class HealthController {
 
     @GetMapping("/")
     public String home() {
-        return "OK";
+        return "OK 👍";
     }
 
      @GetMapping("/health")
     public String health() {
-        return "UP";
+        return "UP 👌";
     }
 
 }
